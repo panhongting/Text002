@@ -1,0 +1,45 @@
+package com.example.andy.andy_application.db.bean;
+
+/**
+ * Created by Andy on 2016/2/2.
+ */
+public class AndyItem {
+    private String user_id;
+    private int age;
+    private String sex;
+
+    public static final String TABLE_NAME = "andy_test";		//表名
+    //删除表语句
+    public static final String DROP_TABLE_SQL = "drop table if exists andy_test";
+
+    //建表语句
+
+    public static final String CREATE_TABLE_SQL_1_0_0 = "create table if not exists andy_test ( _id integer primary key autoincrement," +
+            "user_id varchar,age integer,sex varchar)";
+
+
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+}
